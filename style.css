@@ -1,0 +1,261 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+        width: 40%;
+        font-family: "Sofia", sans-serif;               text-align:center;              font-size:50px;
+	    color:lavender;   background-color:black;      border-radius: 10px;
+        text-shadow: 0 0 25px violet, 0 0 5px blue;  margin-bottom: 5px;
+}
+#h3{
+    margin-top:60px ;
+    margin-bottom: 60px;
+    text-align: center;
+    color:crimson; font-size:60px;
+    font-family: 'Cookie', serif;
+    font-weight: 700; opacity: 0;
+}
+header{
+    display: flex;justify-content: center;
+}
+body{
+    background-image: linear-gradient(to bottom right, lightblue, beige);
+}
+#hug{
+    height: 70px;    width: 70px;   position: absolute;   opacity: 0;  animation-duration: 3s;
+    animation-fill-mode:forwards; animation-delay: 13.5s; margin-left: 52.5%;
+}
+@keyframes hand{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+#people{
+    height: 70px;   width: 70px;    position: absolute;  opacity: 0; animation-duration: 3s;
+    animation-fill-mode:forwards; animation-delay: 13.5s;margin-right: 52.5%;
+}
+@keyframes hugs{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+#container{
+    display: flex;
+    justify-content: center;
+    /*border: 1px solid rebeccapurple;*/
+}
+#content{
+    width: 70%;
+    height: auto;/*border: 1px solid red;*/
+}
+#btn{
+    background-color:inherit;   cursor: pointer;
+    border: none;
+}
+#div1{
+   width:auto;height: 230px;display: flex;justify-content: space-between;align-items: center;
+}
+#div2{
+   width:auto;height: 200px;display: flex;justify-content: space-around; align-items: center;
+}
+#div3{
+   width: auto;height: 230px;display: flex;justify-content: space-between;align-items: center;
+}
+#img1{
+    width: auto;
+    height: 230px;border-radius: 10px;border: 2px solid black;
+    opacity: 0;
+    animation-duration: 3s;
+    animation-fill-mode:forwards ;
+}
+@keyframes image1{
+from{opacity: 0;}
+to{opacity: 1;}
+}
+#top{
+    animation-duration: 2.5s;
+    animation-delay: 2s;
+    animation-fill-mode:backwards ;
+    position: relative;
+    opacity: 0;
+}
+@keyframes move1{
+    0%{left:-20%;opacity: 0;}
+    100%{left: 20%;opacity: 1;}
+}
+#img2{
+    width: auto;
+    height: 230px;border-radius: 10px; border: 2px solid black;
+    opacity: 0;
+    animation-duration: 3s;
+    animation-fill-mode:forwards ;    animation-delay: 4s;
+}
+@keyframes image2{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+#right{
+    animation-duration: 2.5s;
+    animation-fill-mode:backwards ;  animation-delay: 5s;
+    position: relative;
+    opacity: 0;
+}
+@keyframes move2{
+    0%{top:-30%;opacity: 0;}
+    100%{top: 30%;opacity: 1;}
+}
+#box{
+    width: auto;
+    height: 200px;border-radius: 10px;  border: 2px solid black;
+}
+#img3{
+    width: auto;
+    height: 230px;border-radius: 10px; border: 2px solid black;
+    opacity: 0;
+    animation-duration: 3s;
+    animation-fill-mode:forwards ;    animation-delay: 8.5s;
+}
+@keyframes image3{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+#left{
+    animation-duration: 3s;
+    animation-fill-mode:backwards ;animation-delay: 10.5s;
+    position: relative;
+    opacity: 0;
+}
+@keyframes move4{
+    0%{top:30%;opacity: 0;}
+    100%{top: -30%;opacity: 1;}
+}
+
+#img4{
+    width: auto;   opacity: 0;
+    height: 230px;border-radius: 10px; border: 2px solid black;
+    animation-duration: 3s;
+    animation-fill-mode:forwards ;    animation-delay: 6.5s;
+}
+@keyframes image4{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+#bottom{
+    animation-duration: 2.5s;
+    animation-fill-mode:backwards ;  animation-delay: 7.5s;
+    position: relative;
+    opacity: 0;
+}
+@keyframes move3{
+    0%{left:20%;opacity: 0;}
+    100%{left: -20%;opacity: 1;}
+}
+.gif{
+    height: 70px; width: auto; align-self: center;
+}
+#Music{
+    width: 20px;
+    height: 20px;
+    border-radius: 8px;
+    border: 3px solid black; padding: 6px;
+}
+#m-bttn{
+    background-color:inherit;
+    border: none;
+    cursor: pointer;
+}
+footer div{
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-top: 20px;
+}
+footer p{
+    margin-top: 20px;
+    text-align: center;
+}
+#txt1{
+    margin-left:33% ;       font-family: "Cookie", sans-serif;   font-size: 45px;font-weight: 800; color:crimson; text-shadow: 5px 5px 10px black;
+    position: absolute;
+    opacity: 0;
+    animation-duration: 3s;
+    animation-fill-mode:forwards ;animation-delay: 4s;
+}
+@keyframes txt1{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+#txt2{
+    margin-left:30% ;   font-family: "Sofia", sans-serif;  font-size: 45px; font-weight: 800; color: crimson; text-shadow: 5px 5px 10px black;
+    position: absolute;
+    opacity: 0;
+    animation-duration: 3s;
+    animation-fill-mode:forwards; animation-delay: 9s;
+}
+@keyframes txt2{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@media only screen and (max-width: 600px) {
+    
+    #content{
+        width: 100%;
+    }
+    #img1,#img2,#img3,#img4{
+        width: 120px;
+        height: 150px;
+    }
+    #box{
+        width: 200px;
+        height: 150px;
+    }
+    #txt1,#txt2{
+        font-size: 25px;
+        font-weight: 700;
+        margin-left:146px;
+    }
+    #txt1{
+        margin-left: 165px;
+    }
+    .gif{
+        height: 30px;
+        width: 50px;
+    }
+    @keyframes move1{
+        0%{left:-60px;opacity: 0;}
+        100%{left: 60px;opacity: 1;}
+    }
+    @keyframes move3{
+        0%{left:53px;opacity: 0;}
+        100%{left: -50px;opacity: 1;}
+    }
+    h1{
+        width: 80%;
+        font-size: 40px; margin-bottom: 0px;
+    }
+    
+    #people{
+        width:50px ;height: 50px;
+        margin-right: 300px;
+    }
+    #hug{
+        width: 50px;height:50px ;
+        margin-left: 300px;
+    }
+   #h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+   }
+	#Music{
+	width: 15px;
+        height: 15px;
+	}
+	footer p{
+	font-size:10px;
+	}
+	footer div{
+	font-size:14px;
+	}
+  }

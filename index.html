@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Nations</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Fare Thee Well</h1></header>
+    
+<div id="container">
+<div id="content">
+    <div id="div1">
+        <img id="img1" src="one.jpg" alt="img1">
+       <!-- --><div id="txt1"> Jai </div>
+        <img id="top" class="gif" src="https://cdn-icons-png.flaticon.com/128/6751/6751372.png" alt="">
+        <img id="img2" src="two.jpg" alt="img2">
+    </div>
+    <div id="div2">
+        <img id="hug" src="https://cdn-icons-png.flaticon.com/128/7081/7081266.png">
+        <img id="left" class="gif" src="https://cdn-icons-png.flaticon.com/128/64/64945.png" alt="">
+        <button id="btn" onclick="change()"><img id="box" src="https://images.pexels.com/photos/1303079/pexels-photo-1303079.jpeg?auto=compress&cs=tinysrgb&w=600" alt="gift"></button>
+        <img id="right" class="gif" src="https://cdn-icons-png.flaticon.com/128/64/64863.png" alt="">
+        <img id="people" src="https://cdn-icons-png.flaticon.com/128/2408/2408095.png" alt="">
+    </div>
+    <div id="div3">
+        <img id="img3" src="four.jpg" alt="img3">
+        <div id="txt2"> Veeru </div>
+        <img id="bottom" class="gif" src=" https://cdn-icons-png.flaticon.com/128/64/64907.png" alt="">
+        <img id="img4" src="three.jpg" alt="img4">
+    </div>
+</div>
+</div>
+<h3 id="h3">15 years of friendship and counting...</h3>
+<hr>
+<audio  src="" id="my_audio" loop="loop" ></audio>
+<footer><div>Change Music<button id="m-bttn" onclick="song()"><img id="Music" src="https://cdn-icons-png.flaticon.com/128/500/500148.png" alt=""></button></div>
+    <p>Copyright © 2023 Harman Singh Ahluwalia</p>
+</footer>
+<script>
+    const arr=["Kabira.mp3","Lambiyan.mp3","Yaar.mp3"];
+	let c=0;
+    function change(){
+	document.getElementById("my_audio").setAttribute("src", arr[2]);
+        document.getElementById("my_audio").play();
+        document.getElementById("box").setAttribute("src", "https://images.pexels.com/photos/1303084/pexels-photo-1303084.jpeg?auto=compress&cs=tinysrgb&w=600");
+        document.getElementById("img1").style.animationName= "image1";
+        document.getElementById("top").style.animationName= "move1";
+        document.getElementById("txt1").style.animationName= "txt1";
+        document.getElementById("img2").style.animationName= "image2";
+        document.getElementById("right").style.animationName= "move2";
+      document.getElementById("img4").style.animationName= "  image4";
+      document.getElementById("bottom").style.animationName= "move3";
+      document.getElementById("txt2").style.animationName= "txt2";
+      document.getElementById("img3").style.animationName= "  image3";
+      document.getElementById("left").style.animationName= "move4";
+      document.getElementById("hug").style.animationName= "hand";
+      document.getElementById("people").style.animationName= "hugs";
+      document.getElementById("h3").style.opacity="1";
+    }
+
+    function song(){
+		document.getElementById("my_audio").setAttribute("src", arr[c]);
+	 document.getElementById("my_audio").play();
+	 c++;
+	 if(c>=3)
+	 c=0;
+	 }
+</script>
+</body>
+</html>
